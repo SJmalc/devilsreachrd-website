@@ -8,6 +8,7 @@ import appleMusicLogo from './assets/websitelayers/applemusic.png'
 import bandNameWritten from './assets/websitelayers/DRRtxt.png'
 import youtubeLogo from './assets/websitelayers/youtube.png'
 import recentRelease from './assets/websitelayers/recentrelease.png'
+import backgroundImage from './assets/websitelayers/background.png'
 
 export default class App extends Component {
   mediaLinks = {
@@ -23,6 +24,7 @@ export default class App extends Component {
   public render() {
     return (
       <div className="App">
+        <img className='bg' alt='background' src={backgroundImage}></img>
         <div className="bandName">
           <img className='bandNameImage' alt="Devils Reach Rd" src={bandNameWritten}></img>
         </div>
