@@ -61,15 +61,15 @@ img.bg {
 }
 
 img.bandNameImage {
-  width: 422.4px;
+  width: 337.6px;
 
-  margin-top: 160px;
+  margin-top: 100px;
   margin-bottom: 75px;
 }
 
 @media screen and (max-width: 500px) {
   img.bandNameImage {
-    width: 320px;
+    width: 272px;
   }
 }
 
@@ -78,13 +78,13 @@ img.bandNameImage {
 }
 
 .recentReleaseImage {
-  width: 480px;
+  width: 384px;
 }
 
 
 @media screen and (max-width: 500px) {
   .recentReleaseImage {
-    width: 350px;
+    width: 280px;
   }
 } 
 
@@ -109,6 +109,6 @@ img.bandNameImage {
 }
 
 .mediaImage {
-  width: 53.75px;
+  width: 43px;
 }
 
