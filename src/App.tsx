@@ -5,10 +5,9 @@ import instaLogo from './assets/websitelayers/instagram.png'
 import bandcampLogo from './assets/websitelayers/bandcamp.png'
 import spotifyLogo from './assets/websitelayers/spotify.png'
 import appleMusicLogo from './assets/websitelayers/applemusic.png'
-import bandNameWritten from './assets/websitelayers/DRRtxt.png'
 import youtubeLogo from './assets/websitelayers/youtube.png'
-import recentRelease from './assets/websitelayers/recentrelease.png'
-import backgroundImage from './assets/websitelayers/background.png'
+import backgroundImage from './assets/websitelayers/DRR-WEBSITE-BACKGROUND-2.png'
+import bandName from './assets/websitelayers/DRR-TEXT.png'
 
 export default class App extends Component {
   mediaLinks = {
@@ -25,11 +24,8 @@ export default class App extends Component {
     return (
       <div className="App">
         <img className='bg' alt='background' src={backgroundImage}></img>
-        <div className="bandName">
-          <img className='bandNameImage' alt="Devils Reach Rd" src={bandNameWritten}></img>
-        </div>
-        <div className='recentReleaseWrapper'>
-          <img className='recentReleaseImage' alt="Recent Release" src={recentRelease}></img>
+        <div className='bandNameWrapper'>
+          <img className='bandName' alt="Devil\'s Reach Rd" src={bandName}></img>
         </div>
         <div className='iconsWrapper'>
           <div className="linked-icons" >
