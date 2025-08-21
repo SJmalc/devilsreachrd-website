@@ -39,69 +39,77 @@
 
 img.bg {
   /* Set rules to fill background */
-  min-height: 100%;
-  min-width: 1920px;
-	
-  /* Set up proportionate scaling */
   width: 100%;
-  height: auto;
-	
+  height: 100%;
+
+  /* Maintain aspect ratio */
+  object-fit: cover;
+
+  /* Align the right side of the image with the right side of the screen */
+  object-position: right top;
+
   /* Set up positioning */
   position: fixed;
   top: 0;
   left: 0;
   z-index: -1;
+
+  /* Ensure width doesn't exceed viewport width */
+  max-width: 100vw;
 }
 
-@media screen and (max-width: 1920px) { /* Specific to this particular image */
-  img.bg {
-    left: 50%;
-    margin-left: -960px;   /* 50% */
+.bandNameWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 5%;
+}
+
+@media screen and (max-width: 700px) {
+  .bandNameWrapper {
+    margin-right: 10%;
   }
 }
 
-img.bandNameImage {
-  width: 337.6px;
-
-  margin-top: 100px;
-  margin-bottom: 75px;
+.bandName {
+  height: 12rem;
 }
 
-@media screen and (max-width: 500px) {
-  img.bandNameImage {
-    width: 272px;
+@media screen and (max-width: 800px) {
+  .bandName {
+    height: 4rem;
   }
 }
 
-.recentReleaseWrapper {
-  margin-bottom: 80px;
-}
 
-.recentReleaseImage {
-  width: 384px;
-}
-
-
-@media screen and (max-width: 500px) {
-  .recentReleaseImage {
-    width: 280px;
+@media screen and (min-width: 801px) and (max-width: 1199px) {
+  .bandName {
+    height: 8rem;
   }
-} 
+}
 
 .iconsWrapper {
   display: flex;
+  flex-direction: column; /* Change items to vertical */
   justify-content: center;
+  align-items: flex-end; /* Align items to the right */;
+  padding-right: 5%;
+  position: fixed; /* Fix the wrapper at the bottom of the screen */
+  bottom: 35%;
+  width: 95%;
+}
+
+@media screen and (max-width: 700px) {
+  .iconsWrapper {
+    width: 90%;
+  }
 }
 
 .linked-icons {
-  width: 384px;
+  width: fit-content;
   display: flex;
-}
-
-@media screen and (max-width: 500px) {
-  .linked-icons {
-    width: 75%;
-  }
+  flex-direction: column; /* Ensure vertical layout */
+  gap: 16px;
 }
 
 .mediaAnchor {
